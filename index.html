@@ -30,18 +30,69 @@
             </div>
         </nav>
         <!-- Header-->
-         <main>
-        <header class="masthead text-center text-white">
-            <div class="masthead-content">
+        <main>
+            <header class="masthead text-center text-white">
+              <div class="masthead-content">
+                <div class="mySlides fade">
+                  <img src="assets/img/PHOTO-2024-05-30-16-29-56 11.jpg" width="800" height="500">
+                </div>
+                <div class="mySlides fade">
+                  <img src="assets/img/PHOTO-2024-05-30-16-29-56 14.jpg" width="800" height="500">
+                </div>
+                <div class="mySlides fade">
+                  <img src="assets/img/PHOTO-2024-05-30-16-29-56 15.jpg" width="800" height="500">
+                </div>
+                <div class="mySlides fade">
+                  <img src="assets/img/PHOTO-2024-05-30-16-29-56 9.jpg" width="800" height="500">
+                </div>
+                <div class="mySlides fade">
+                  <img src="assets/img/PHOTO-2024-05-30-16-29-57.jpg" width="800" height="500">
+                </div>
+                <div class="mySlides fade">
+                  <img src="assets/img/PHOTO-2024-05-30-16-29-57 5.jpg" width="800" height="500">
+                </div>
+              </div>
+              <br>
+          
+             
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+              
+              <script>
+              let slideIndex = 0;
+              showSlides();
+              
+              function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+              }
+              </script>
+          
               <div class="container px-5">
-                <img src="assets/img/PHOTO-2024-05-30-16-29-55 3.jpg" width="800" height="500">
                 <h1 class="masthead-heading mb-0">Ace Medical</h1>
                 <h2 class="masthead-subheading mb-0">Contact Us Today!</h2>
                 <a class="btn btn-primary btn-xl rounded-pill mt-5" href="callus.html">Call Us</a>
-
-            </div>
-          </header>
+              </div>
+            </header>
           </main>
+          
         
           
         <!-- Content section 1-->

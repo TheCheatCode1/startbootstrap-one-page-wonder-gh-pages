@@ -30,21 +30,10 @@
             </div>
         </nav>
         <!-- Header-->
-         <main>
-        <header class="masthead text-center text-white">
-            <div class="masthead-content">
-              <div class="container px-5">
-                <img src="assets/img/PHOTO-2024-05-30-16-29-55 3.jpg">
-                <h1 class="masthead-heading mb-0">Ace Medical</h1>
-                <h2 class="masthead-subheading mb-0">We will be there for you</h2>
-                <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Call Us</a>
-              </div>
-            </div>
-          </header>
-          </main>
+      
         
           
-          <div class="py-5 bg-white">
+          <div class="py-5 bg-orange">
             <section id="contact" class="contact section">
 
                 <!-- Section Title -->
@@ -65,7 +54,7 @@
                           <i class="bi bi-geo-alt flex-shrink-0"></i>
                           <div>
                             <h3>Address</h3>
-                            <p>WIP</p>
+                            <p>39 Adebajo Street New Bodija, Ibadan Oyo State. Nigeria.</p>
                           </div>
                         </div><!-- End Info Item -->
           
@@ -101,20 +90,77 @@
                             <label for="name-field" class="pb-2">Your Name</label>
                             <input type="text" name="name" id="name-field" class="form-control" required="">
                           </div>
-          
                           <div class="col-md-6">
-                            <label for="email-field" class="pb-2">Your Email</label>
+                            <label for="email-field" class="pb-2">Phone Number</label>
                             <input type="email" class="form-control" name="email" id="email-field" required="">
                           </div>
-          
+                          <form>
+                            <div class="form-group">
+                              <label for="gender" class="form-label">Gender:</label>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                <label class="form-check-label" for="male">Male</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                <label class="form-check-label" for="female">Female</label>
+                              </div>
+                            </div>
+                          </form>
                           <div class="col-md-12">
                             <label for="subject-field" class="pb-2">Subject</label>
                             <input type="text" class="form-control" name="subject" id="subject-field" required="">
                           </div>
-          
                           <div class="col-md-12">
-                            <label for="message-field" class="pb-2">Message</label>
+                            <label for="subject-field" class="pb-2">Address</label>
+                            <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                          </div>
+                          <form action="/action_page.php">
+                            <label for="birthdaytime">Birthday (date and time):</label>
+                            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+                            <input type="submit">
+                            <div class="col-md-12">
+                              <label for="subject-field" class="pb-2">Transport To:</label>
+                              <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                            </div>
+                          <div class="col-md-12">
+                            <label for="subject-field" class="pb-2">Condition of Patient </label>
+                            <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="subject-field" class="pb-2">Allergy</label>
+                            <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                          </div><div class="col-md-12">
+                            <label for="message-field" class="pb-2">Patient Transfered to:</label>
                             <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                          </div>
+                          <div class="col-md-12">
+                            <label for="message-field" class="pb-2">Physician Nofication</label>
+                            <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                          </div>
+                          <form action="/action_page.php">
+                            <label for="appt">Select a time:</label>
+                            <input type="time" id="appt" name="appt">
+                            <input type="submit">
+                          </form>
+                          <div class="col-md-6">
+                            <label for="subject-field" class="pb-2">Third Party</label>
+                            <form>
+                              <div class="form-group">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="n" id="n" value="n">
+                                  <label class="form-check-label" for="n">No</label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="y" id="y" value="y">
+                                  <label class="form-check-label" for="y">Yes</label>
+                                </div>
+                                </div>
+                            </form>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="subject-field" class="pb-2">Relationship to Patient</label>
+                            <input type="text" class="form-control" name="subject" id="subject-field" required="">
                           </div>
           
                           <div class="col-md-12 text-center">
